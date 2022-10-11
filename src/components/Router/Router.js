@@ -9,7 +9,13 @@ export const router = createBrowserRouter([
     path: "/",
     element: <Main></Main>,
     children: [
-      { path: "/", element: <Home></Home> },
+      {
+        path: "/",
+        loader: () => {
+          return fetch("https://openapi.programming-hero.com/api/quiz");
+        },
+        element: <Home></Home>,
+      },
       { path: "/home", element: <Home></Home> },
       { path: "/statistics", element: <Statistics></Statistics> },
       { path: "/blog", element: <Blog></Blog> },

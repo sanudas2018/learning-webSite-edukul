@@ -1,0 +1,10 @@
+/* .cardInnerBody {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+} */
+.contentDiv {
+  display: block;
+  margin: 0px auto;
+}

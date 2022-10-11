@@ -1,37 +1,4 @@
-/* .image{
-    height: 40vh;
-} */
-.container {
+.containerBody {
   width: 95%;
-  margin: 0px auto;
-}
-@media (max-width: 770px) {
-  .container {
-    flex-direction: column-reverse;
-  }
-  .imageBox {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-  }
-  .textContent {
-    margin-top: 8px;
-    text-align: center;
-  }
-  .textContent h1 {
-    font-size: 16px;
-  }
-  .imageBox img {
-    height: 170px;
-  }
-  /*
-  .imgBoxInner img {
-    width: 100%;
-  }
-
-  .textContent {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-  } */
+  margin: 20px auto;
 }
