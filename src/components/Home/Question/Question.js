@@ -1,8 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Question.css";
 
 const Question = ({ question }) => {
   const { id, name, logo, total } = question;
+  const navigate = useNavigate();
+  const handleQuesAnswer = () => {
+    navigate(`/question/${id}`);
+  };
   return (
     <div>
       <div className="card card-compact bg-base-100 shadow-xl glass">
@@ -19,7 +24,10 @@ const Question = ({ question }) => {
           </div>
         </div>
         <div className="card-actions justify-end mt-4 mb-2">
-          <button className="btn btn-secondary btn-sm w-[99%]">
+          <button
+            onClick={handleQuesAnswer}
+            className="btn btn-secondary btn-sm w-[99%]"
+          >
             Start Practice
           </button>
         </div>
