@@ -1,0 +1,29 @@
+.containerSingle {
+  width: 95%;
+  margin: 20px auto;
+}
+.containerSingle h1 {
+  /* text-align: center; */
+}
+/* ==========  */
+.mainContent {
+}
+.questionCard {
+  /* width: 60%; */
+  /* height: 250px; */
+  border: 2px solid;
+  padding: 10px 5px 20px 5px;
+  background-color: #19223c;
+}
+.quesTitle {
+}
+.inner {
+  border: 2px solid rgba(167, 63, 155, 0.667);
+  padding: 5px;
+}
+/* ============  */
+@media (max-width: 855px) {
+  .questionCard {
+    width: 95%;
+  }
+}
