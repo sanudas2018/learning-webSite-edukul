@@ -40,7 +40,7 @@ const QuestionLineChart = () => {
   ];
   return (
     <div>
-      <div className="w-[90%] h-[80vh] bg-slate-300 mx-auto text-center border-4 border-pink-600 overflow-hidden mt-8 chartShadow">
+      <div className="md:w-[90%] h-[80vh] w-[98%] bg-slate-300 mx-auto text-center border-4 border-pink-600 overflow-hidden mt-8 chartShadow">
         <div className="mx-auto mt-4 overflow-hidden">
           <ResponsiveContainer
             className="mx-auto mt-10 barChart"
@@ -50,8 +50,9 @@ const QuestionLineChart = () => {
             <BarChart
               className="mt-5 barChart"
               data={data}
-              width={600}
-              height={450}
+
+              // width={600}
+              // height={450}
             >
               <Bar dataKey="total" fill="#18B2A8" />
               <XAxis dataKey="name" />
