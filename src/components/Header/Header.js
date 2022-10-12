@@ -5,7 +5,7 @@ import "./Header.css";
 const Header = () => {
   return (
     <div>
-      <div className="navbar bg-sky-800 text-white">
+      <div className="navbar bg-sky-900 text-white navBarTop">
         <div className="flex-1">
           <Link
             to="/"

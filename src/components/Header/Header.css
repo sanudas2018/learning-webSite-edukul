@@ -3,7 +3,9 @@
   justify-content: center;
   padding: 10px;
 } */
-
+.navBarTop {
+  box-shadow: rgba(115, 166, 185, 0.53) 0px 25px 20px -20px;
+}
 .nav-bar a {
   color: whitesmoke;
   margin-right: 20px;
@@ -14,7 +16,7 @@
   cursor: pointer;
 }
 .active {
-  background-color: rgba(195, 46, 103, 0.926);
+  background-color: rgba(30, 88, 142, 0.926);
   border-radius: 10px;
 }
 

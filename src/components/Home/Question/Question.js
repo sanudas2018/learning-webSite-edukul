@@ -10,7 +10,7 @@ const Question = ({ question }) => {
   };
   return (
     <div>
-      <div className="card card-compact bg-base-100 shadow-xl glass">
+      <div className="card card-compact bg-base-100 shadow-xl glass pb-2 cardShadow">
         <figure>
           <img className="h-40 w-[100%] border-b-2" src={logo} alt="Shoes" />
         </figure>
@@ -23,10 +23,10 @@ const Question = ({ question }) => {
             </p>
           </div>
         </div>
-        <div className="card-actions justify-end mt-4 mb-2">
+        <div className="card-actions justify-end mt-4">
           <button
             onClick={handleQuesAnswer}
-            className="btn btn-secondary btn-sm w-[99%]"
+            className="btn btnSecondary btn-sm w-[99%] text-white hover:bg-sky-700"
           >
             Start Practice
           </button>
