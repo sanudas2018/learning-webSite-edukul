@@ -1,10 +1,11 @@
 import React from "react";
+import QuestionLineChart from "./QuestionLineChart/QuestionLineChart";
 import "./Statistics.css";
 
 const Statistics = () => {
   return (
     <div>
-      <p>statistics</p>
+      <QuestionLineChart></QuestionLineChart>
     </div>
   );
 };

@@ -1,0 +1,19 @@
+.blogContainer {
+  background-color: #19223c;
+}
+.cartTitle h1 {
+}
+.line1 {
+  height: 3px;
+  background-color: rgba(162, 25, 91, 0.664);
+  width: 200px;
+  margin-bottom: 10px;
+}
+.line {
+  height: 4px;
+  background-color: rgb(162, 25, 91);
+}
+.cartBody p {
+  word-spacing: 4px;
+  text-align: justify;
+}
