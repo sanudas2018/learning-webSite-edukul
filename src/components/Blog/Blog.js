@@ -4,7 +4,7 @@ import "./Blog.css";
 const Blog = () => {
   return (
     <div>
-      <div className="blogContainer mx-auto w-[90%] p-10 mt-5">
+      <div className="blogContainer mx-auto w-[90%] p-10 mt-8">
         <div className="cartBlog mb-3 ">
           <div className="cartTitle">
             <h1 className="font-extrabold text-3xl mb-2">

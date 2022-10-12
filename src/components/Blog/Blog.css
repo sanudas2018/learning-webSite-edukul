@@ -1,8 +1,8 @@
 .blogContainer {
-  background-color: #19223c;
+  background-color: #19223c !important;
+  border-radius: 15px;
 }
-.cartTitle h1 {
-}
+
 .line1 {
   height: 3px;
   background-color: rgba(162, 25, 91, 0.664);
@@ -11,7 +11,7 @@
 }
 .line {
   height: 4px;
-  background-color: rgb(162, 25, 91);
+  background-color: rgba(124, 27, 74, 0.599);
 }
 .cartBody p {
   word-spacing: 4px;

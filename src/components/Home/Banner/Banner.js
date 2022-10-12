@@ -4,7 +4,7 @@ import "./Banner.css";
 const Banner = () => {
   return (
     <div>
-      <section id="banner" className=" py-4">
+      <section id="banner" className=" py-4 mt-4">
         <div className="container mx-auto py-2 px-2 flex md:flex-row-reverse bg-indigo-200 rounded-xl">
           {/* ========  */}
           <div className="md:w-1/2 flex flex-col align-middle justify-center textContent">

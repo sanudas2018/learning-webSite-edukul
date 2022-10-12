@@ -64,8 +64,10 @@ const QuestionDetails = () => {
   // console.log(questionData);
   return (
     <div>
-      <div className="containerSingle">
-        <h1 className="text-center text-4xl ">Quiz of {name}</h1>
+      <div className="containerSingle mt-4 overflow-hidden">
+        <h1 className="text-center text-4xl overflow-hidden mt-4">
+          Quiz of {name}
+        </h1>
         <div className="mainContent mt-9 mx-auto">
           {/* maltiple question maping  */}
           {questionAnswer.data.questions.map((singleData, index) => (
@@ -73,10 +75,6 @@ const QuestionDetails = () => {
               key={index}
               singleData={singleData}
               dtaIndex={index}
-              // wrongAns={wrongAns}
-              // quizId={id}
-              // quizData={quizs}
-              // newObj={newObj}
             ></SingleQues>
           ))}
         </div>

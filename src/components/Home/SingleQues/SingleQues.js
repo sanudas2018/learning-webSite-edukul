@@ -65,7 +65,7 @@ const SingleQues = ({ singleData, dtaIndex }) => {
     <div>
       <div className="questionCard mb-5 mx-auto w-[95%] md:w-[70%]">
         <div className="quesTitle text-center relative overflow-hidden">
-          <h1 className="mt-6 font-bold text-xl">
+          <h1 className="mt-6 font-bold text-xl overflow-hidden">
             Quiz {dtaIndex + 1}: {question}
           </h1>
           <EyeIcon
