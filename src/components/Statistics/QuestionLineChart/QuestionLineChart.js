@@ -1,5 +1,13 @@
 import React from "react";
-import { Bar, BarChart, ResponsiveContainer, XAxis, YAxis } from "recharts";
+import {
+  Bar,
+  BarChart,
+  Line,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from "recharts";
 
 import "./QuestionLineChart.css";
 
@@ -37,17 +45,18 @@ const QuestionLineChart = () => {
           <ResponsiveContainer
             className="mx-auto mt-10 barChart"
             width={600}
-            height={600}
+            height={450}
           >
             <BarChart
               className="mt-5 barChart"
               data={data}
               width={600}
-              height={600}
+              height={450}
             >
               <Bar dataKey="total" fill="#18B2A8" />
               <XAxis dataKey="name" />
               <YAxis />
+              <Tooltip />
             </BarChart>
           </ResponsiveContainer>
         </div>
