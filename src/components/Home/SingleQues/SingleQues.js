@@ -5,7 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 import "./SingleQues.css";
 
 const SingleQues = ({ singleData, dtaIndex }) => {
-  console.log(singleData);
+  // console.log(singleData);
   const { question, correctAnswer, options } = singleData;
   const clickIcon = (correctAnswer) => {
     toast.success(correctAnswer, {
@@ -76,7 +76,7 @@ const SingleQues = ({ singleData, dtaIndex }) => {
         <div className="quesBody grid grid-cols-1 md:grid-cols-2 gap-3 mt-5 mx-3">
           <label
             className="cursor-pointer overflow-hidden"
-            for={select + "first"}
+            htmlFor={select + "first"}
           >
             <div
               onChange={() => {
@@ -103,7 +103,7 @@ const SingleQues = ({ singleData, dtaIndex }) => {
           {/* =====2====  */}
           <label
             className="cursor-pointer overflow-hidden"
-            for={select + "second"}
+            htmlFor={select + "second"}
           >
             <div
               onChange={() => {
@@ -127,7 +127,7 @@ const SingleQues = ({ singleData, dtaIndex }) => {
           {/* ====3====  */}
           <label
             className="cursor-pointer overflow-hidden"
-            for={select + "third"}
+            htmlFor={select + "third"}
           >
             <div
               onChange={() => {
@@ -151,7 +151,7 @@ const SingleQues = ({ singleData, dtaIndex }) => {
           {/* =====4====  */}
           <label
             className="cursor-pointer overflow-hidden "
-            for={select + "fourth"}
+            htmlFor={select + "fourth"}
           >
             <div
               onChange={() => {

@@ -4,6 +4,7 @@ import Main from "../Main/Main";
 import Statistics from "../Statistics/Statistics";
 import Blog from "../Blog/Blog";
 import QuestionDetails from "../Home/QuestionDetails/QuestionDetails";
+import NotFound from "../NotFound/NotFound";
 
 export const router = createBrowserRouter([
   {
@@ -31,4 +32,5 @@ export const router = createBrowserRouter([
       { path: "/blog", element: <Blog></Blog> },
     ],
   },
+  { path: "*", element: <NotFound></NotFound> },
 ]);
