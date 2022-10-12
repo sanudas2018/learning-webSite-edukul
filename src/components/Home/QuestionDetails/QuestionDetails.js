@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { EyeIcon } from "@heroicons/react/24/solid";
 
@@ -7,41 +7,77 @@ import SingleQues from "../SingleQues/SingleQues";
 
 const QuestionDetails = () => {
   // const [questionData, setQuestionsData] = useState();
+  // const [wrongAns, setWrongAns] = useState();
   const questionAnswer = useLoaderData();
   const { id, name, logo, questions } = questionAnswer.data;
+  // console.log(questionAnswer.data.questions);
+  // let allquestionData = questionAnswer.data.questions;
+  // console.log(allquestionData);
+  // const [quizs, setQuizs] = useState();
+  // const [currentIndex, setCurrentIndex] = useState(0);
+  // const [qudata, setQudata] = useState([]);
+  // console.log(questionAnswer);
   // setQuestionsData(questions);
+
+  // let optionsNew = questions[0].options;
+  // let correctAnswerNew = questions[0].correctAnswer;
+  // let incorrectAnswer = [];
+  // for (let x of optionsNew) {
+  //   console.log(x);
+  //   if (x !== correctAnswerNew) {
+  //     incorrectAnswer.push(x);
+  //   }
+  // }
+  // let newObj = [
+  //   {
+  //     incorrectAnswer: incorrectAnswer,
+  //     correctAnswerNew: correctAnswerNew,
+  //   },
+  // ];
+  // console.log(correctAnswerNew);
+  // console.log(optionsNew);
+  // console.log(newObj);
+
+  // useEffect(() => {
+  //   fetch(`https://openapi.programming-hero.com/api/quiz/${id}`)
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       setQuestionsData(data.data.questions);
+  //     });
+  //   let wrongDataAll = questionAnswer.data.questions;
+  //   let wrongNew = [];
+  //   for (let wrong of wrongDataAll) {
+  //     let corrAns = wrong.correctAnswer;
+  //     let wrongAns = wrong.options;
+  //     // console.log(corrAns);
+  //     // console.log(wrongAns);
+  //     for (let x of wrongAns) {
+  //       if (x !== corrAns) {
+  //         wrongNew.push(x);
+  //       }
+  //       // console.log(x);
+  //     }
+  //   }
+  //   setWrongAns(wrongNew);
+  //   // setQuestionsData(questionAnswer.data.questions);
+  // }, []);
+  // console.log(questionData);
   return (
     <div>
       <div className="containerSingle">
         <h1 className="text-center text-4xl ">Quiz of {name}</h1>
         <div className="mainContent mt-9 mx-auto">
           {/* maltiple question maping  */}
-
-          {questions.map((singleData, index) => (
+          {questionAnswer.data.questions.map((singleData, index) => (
             <SingleQues
               key={index}
               singleData={singleData}
-              singleData2={index}
+              dtaIndex={index}
+              // wrongAns={wrongAns}
+              // quizId={id}
+              // quizData={quizs}
+              // newObj={newObj}
             ></SingleQues>
-            // <div key={index}>
-            //   <div className="questionCard mb-5 mx-auto w-[95%] md:w-[70%]">
-            //     <div className="quesTitle text-center relative overflow-hidden">
-            //       <h1 className="mt-6 font-bold text-xl">
-            //         Quiz {index + 1}: {singleData.question}
-            //       </h1>
-            //       <EyeIcon className="h-6 w-6 text-blue-500 absolute top-0 right-0 cursor-pointer" />
-            //     </div>
-            //     <div className="quesBody grid grid-cols-1 md:grid-cols-2 gap-3 mt-5 mx-3">
-            //       {/* Option maping another  */}
-
-            //       {singleData.options.map((option) => (
-            //         <div className="inner cursor-pointer rounded-md hover:bg-sky-700 hover:border-sky-400">
-            //           <h2 className="ml-3 py-2">{option}</h2>
-            //         </div>
-            //       ))}
-            //     </div>
-            //   </div>
-            // </div>
           ))}
         </div>
       </div>

@@ -21,6 +21,10 @@
   border: 2px solid rgba(167, 63, 155, 0.667);
   padding: 5px;
 }
+/* .contentDiv {
+  display: inline-block;
+  margin: 0px auto;
+} */
 /* ============  */
 @media (max-width: 855px) {
   .questionCard {
